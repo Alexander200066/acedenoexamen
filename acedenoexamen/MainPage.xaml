@@ -5,7 +5,7 @@
              Title="Login">
     <ScrollView>
         <VerticalStackLayout Padding="24,18" Spacing="18">
-            <Image Source="logo_instituto.svg"
+            <Image Source="logo_suda.jpg"
                    HeightRequest="82"
                    WidthRequest="320"
                    Aspect="AspectFit"
