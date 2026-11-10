@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="acedenoexamen.MainPage"
+             Title="Login">
+    <ScrollView>
+        <VerticalStackLayout Padding="28,32" Spacing="18">
+            <Image Source="logo_cursos.svg" HeightRequest="120" Aspect="AspectFit" />
+            <Label Text="LOGIN" Style="{StaticResource LoginTitle}" />
+
+            <Grid ColumnDefinitions="Auto,*" RowDefinitions="Auto,Auto" ColumnSpacing="12" RowSpacing="14">
+                <Label Grid.Row="0" Grid.Column="0" Text="Usuario" Style="{StaticResource FormLabel}" VerticalOptions="Center" />
+                <Entry x:Name="UsuarioEntry" Grid.Row="0" Grid.Column="1" Placeholder="Ingrese su usuario" />
+                <Label Grid.Row="1" Grid.Column="0" Text="Contraseña" Style="{StaticResource FormLabel}" VerticalOptions="Center" />
+                <Entry x:Name="ContrasenaEntry" Grid.Row="1" Grid.Column="1" Placeholder="Ingrese su contraseña" IsPassword="True" />
+            </Grid>
+
+            <Button Text="Iniciar sesión" Clicked="OnLoginClicked" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
