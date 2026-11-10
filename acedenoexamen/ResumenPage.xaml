@@ -5,28 +5,50 @@
              Title="Resumen">
     <ScrollView>
         <VerticalStackLayout Padding="24,18" Spacing="16">
-            <Label x:Name="UsuarioConectadoLabel" Style="{StaticResource ConnectedUser}" />
-            <Label Text="RESUMEN" Style="{StaticResource PageTitle}" />
-            <Grid ColumnDefinitions="*,*" RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto" ColumnSpacing="14" RowSpacing="0">
-                <Label Grid.Row="0" Text="Nombre" Style="{StaticResource SummaryLabel}" />
-                <Label x:Name="NombreLabel" Grid.Row="0" Grid.Column="1" Style="{StaticResource SummaryValue}" />
-                <Label Grid.Row="1" Text="Apellido" Style="{StaticResource SummaryLabel}" />
-                <Label x:Name="ApellidoLabel" Grid.Row="1" Grid.Column="1" Style="{StaticResource SummaryValue}" />
-                <Label Grid.Row="2" Text="Edad" Style="{StaticResource SummaryLabel}" />
-                <Label x:Name="EdadLabel" Grid.Row="2" Grid.Column="1" Style="{StaticResource SummaryValue}" />
-                <Label Grid.Row="3" Text="Fecha" Style="{StaticResource SummaryLabel}" />
-                <Label x:Name="FechaLabel" Grid.Row="3" Grid.Column="1" Style="{StaticResource SummaryValue}" />
-                <Label Grid.Row="4" Text="Ciudad" Style="{StaticResource SummaryLabel}" />
-                <Label x:Name="CiudadLabel" Grid.Row="4" Grid.Column="1" Style="{StaticResource SummaryValue}" />
-                <Label Grid.Row="5" Text="País" Style="{StaticResource SummaryLabel}" />
-                <Label x:Name="PaisLabel" Grid.Row="5" Grid.Column="1" Style="{StaticResource SummaryValue}" />
-                <Label Grid.Row="6" Text="Monto inicial" Style="{StaticResource SummaryLabel}" />
-                <Label x:Name="MontoInicialLabel" Grid.Row="6" Grid.Column="1" Style="{StaticResource SummaryValue}" />
-                <Label Grid.Row="7" Text="Pago mensual" Style="{StaticResource SummaryLabel}" />
-                <Label x:Name="PagoMensualLabel" Grid.Row="7" Grid.Column="1" Style="{StaticResource SummaryValue}" />
-                <Label Grid.Row="8" Text="Pago total" Style="{StaticResource SummaryLabel}" />
-                <Label x:Name="PagoTotalLabel" Grid.Row="8" Grid.Column="1" Style="{StaticResource SummaryValue}" />
+            <Grid ColumnDefinitions="Auto,*" ColumnSpacing="14">
+                <Image Grid.Column="0"
+                       Source="logo_instituto.svg"
+                       HeightRequest="76"
+                       WidthRequest="275"
+                       Aspect="AspectFit"
+                       HorizontalOptions="Start" />
+                <Label x:Name="UsuarioConectadoLabel"
+                       Grid.Column="1"
+                       Style="{StaticResource ConnectedUser}"
+                       VerticalOptions="Center" />
             </Grid>
+
+            <Label Text="RESUMEN" Style="{StaticResource PageTitle}" />
+            <Label Text="Información del estudiante"
+                   Style="{StaticResource SectionTitle}"
+                   HorizontalOptions="Start" />
+
+            <Border Style="{StaticResource SummaryCard}">
+                <Grid ColumnDefinitions="*,*"
+                      RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto"
+                      ColumnSpacing="14"
+                      RowSpacing="0">
+                    <Label Grid.Row="0" Text="Nombre" Style="{StaticResource SummaryLabel}" />
+                    <Label x:Name="NombreLabel" Grid.Row="0" Grid.Column="1" Style="{StaticResource SummaryValue}" />
+                    <Label Grid.Row="1" Text="Apellido" Style="{StaticResource SummaryLabel}" />
+                    <Label x:Name="ApellidoLabel" Grid.Row="1" Grid.Column="1" Style="{StaticResource SummaryValue}" />
+                    <Label Grid.Row="2" Text="Edad" Style="{StaticResource SummaryLabel}" />
+                    <Label x:Name="EdadLabel" Grid.Row="2" Grid.Column="1" Style="{StaticResource SummaryValue}" />
+                    <Label Grid.Row="3" Text="Fecha" Style="{StaticResource SummaryLabel}" />
+                    <Label x:Name="FechaLabel" Grid.Row="3" Grid.Column="1" Style="{StaticResource SummaryValue}" />
+                    <Label Grid.Row="4" Text="Ciudad" Style="{StaticResource SummaryLabel}" />
+                    <Label x:Name="CiudadLabel" Grid.Row="4" Grid.Column="1" Style="{StaticResource SummaryValue}" />
+                    <Label Grid.Row="5" Text="País" Style="{StaticResource SummaryLabel}" />
+                    <Label x:Name="PaisLabel" Grid.Row="5" Grid.Column="1" Style="{StaticResource SummaryValue}" />
+                    <Label Grid.Row="6" Text="Monto inicial" Style="{StaticResource SummaryLabel}" />
+                    <Label x:Name="MontoInicialLabel" Grid.Row="6" Grid.Column="1" Style="{StaticResource SummaryValue}" />
+                    <Label Grid.Row="7" Text="Pago mensual" Style="{StaticResource SummaryLabel}" />
+                    <Label x:Name="PagoMensualLabel" Grid.Row="7" Grid.Column="1" Style="{StaticResource SummaryValue}" />
+                    <Label Grid.Row="8" Text="Pago total" Style="{StaticResource SummaryLabel}" />
+                    <Label x:Name="PagoTotalLabel" Grid.Row="8" Grid.Column="1" Style="{StaticResource SummaryTotal}" />
+                </Grid>
+            </Border>
+
             <Button Text="Volver al inicio" Clicked="OnVolverInicioClicked" />
         </VerticalStackLayout>
     </ScrollView>

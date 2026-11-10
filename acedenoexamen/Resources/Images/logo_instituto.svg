@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="740" height="190" viewBox="0 0 740 190">
+  <rect width="740" height="190" rx="34" fill="#f7f7f7" stroke="#d7d7d7" stroke-width="4"/>
+  <path d="M0 158V92L62 12h74L72 92v66z" fill="#0099a6"/>
+  <path d="M48 132h132l-23 32H25z" fill="#006d83"/>
+  <path d="M105 36h92l-20 27h-92zM91 77h88l-20 27H71zM77 118h80l-20 27H57z" fill="#0099a6"/>
+  <circle cx="177" cy="57" r="18" fill="#777"/>
+  <path d="M145 75h47l-31 70h-41z" fill="#777"/>
+  <text x="235" y="58" font-family="Arial,sans-serif" font-size="25" font-weight="bold" font-style="italic" fill="#008a98">INSTITUTO DE TECNOLOGÍAS</text>
+  <text x="232" y="112" font-family="Arial,sans-serif" font-size="46" font-weight="bold" font-style="italic" fill="#008a98">SUDAMERICANO</text>
+  <text x="238" y="150" font-family="Arial,sans-serif" font-size="20" font-weight="bold" letter-spacing="3" fill="#008a98">ESTABLECIDO EN 1995</text>
+  <text x="635" y="151" font-family="Arial,sans-serif" font-size="19" font-weight="bold" fill="#008a98">CUENCA</text>
+</svg>

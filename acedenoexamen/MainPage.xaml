@@ -4,8 +4,12 @@
              x:Class="acedenoexamen.MainPage"
              Title="Login">
     <ScrollView>
-        <VerticalStackLayout Padding="28,32" Spacing="18">
-            <Image Source="logo_cursos.svg" HeightRequest="120" Aspect="AspectFit" />
+        <VerticalStackLayout Padding="24,18" Spacing="18">
+            <Image Source="logo_instituto.svg"
+                   HeightRequest="82"
+                   WidthRequest="320"
+                   Aspect="AspectFit"
+                   HorizontalOptions="Start" />
             <Label Text="LOGIN" Style="{StaticResource LoginTitle}" />
 
             <Grid ColumnDefinitions="Auto,*" RowDefinitions="Auto,Auto" ColumnSpacing="12" RowSpacing="14">
